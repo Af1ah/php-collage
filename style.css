@@ -1,0 +1,19 @@
+.container{
+    background-color: bisque;
+    width: fit-content;
+    padding: 100px;
+    margin: 0px auto;
+    font-size: medium;
+     padding-top: 30px;
+    text-align: center;
+
+}
+.result{
+    background-color: bisque;
+    width: fit-content;
+    font-size: medium;
+     text-align: center;
+      margin:0px auto;
+       padding: 100px;
+}
+

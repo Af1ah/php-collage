@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      legend{
+        background-color:bisque;
+        padding: 5px 20px;
+        border-radius: 15px;
+      }
+      fieldset{
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        background-color:rgb(131, 191, 217);
+      }
+      input{
+        border-radius: 5px;
+        padding: 3px;
+        border: none;
+      }
+      label{
+        text-transform: capitalize;
+      }
+      .btn{
+        padding: 10px 15px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 20px;
+        background-color: teal;
+        color: white;
+        font-weight: 300;
+      }
+    </style>
+</head>
+<body>
+    <h1>BIO DATA</h1>
+    <form action="biodata.php" method="post">
+    <fieldset>
+      <legend>personal details</legend>
+      <table>
+      <tr>
+        <td><label>name:</td>
+        <td> <input type="text" name="name" placeholder="enter your name"  /> </label>
+      </tr>
+      </td>
+      <tr>
+
+        <td><label>address:</td>
+        <td> <textarea name="address" placeholder="address" cols="20" rows="3"></textarea>
+          </label></td>
+      </tr>
+       <tr>
+        <td><label for="dob">Date of Birth</label></td>
+        <td><input type="date" name="dob" id="dob"  ></td>
+      </tr>
+       <tr>
+        <td><label for="phone">phone number</label></td>
+        <td><input type="tel" name="phone" id="phone"  ></td>
+      </tr>
+      <tr>
+        <td><label for="email">email</label></td>
+        <td><input type="email" name="email" id="email"  ></td>
+      </tr>
+
+      <tr>
+        <td><label for="gender">gender:</label></td>
+        <td>
+          <label for="male">male </label>
+          <input type="radio" name="gender" id="male" value="male">
+          <label for="female">female </label>
+          <input type="radio" name="gender" id="female" value="female">
+        </td>
+
+      </tr>
+      <tr>
+        <td><label for="lang">Language: </label></td>
+        <td>
+          <label for="mal">Malayalam</label>
+          <input type="checkbox" name="languages[]" id="mal" value="Malayalam">
+          <label for="eg">english</label>
+          <input type="checkbox" name="languages[]" id="eg" value="English">
+          <label for="ar">arabic</label>
+          <input type="checkbox" name="languages[]" id="ar" value="Arabic">
+          <label for="hin">hindi</label>
+          <input type="checkbox" name="languages[]" id="hin" value="Hindi">
+        </td>
+      </tr>
+  <tr>
+    <td><label for="qualification">Qualification:</label></td>
+    <td>
+      <select id="qualification" name="qualification" >
+                <option value="Post Graduation">Post Graduation</option>
+                <option value="Under Graduation">Under Graduation</option>
+                <option value="Plus Two">Plus Two</option>
+                <option value="SSLC">SSLC</option>
+              </select>
+            </td>
+          </tr>
+      <tr>
+        <td><label for="city">city</label></td>
+      <td>
+        
+        <input list="cities" id="city" name="city">
+        <datalist id="cities">
+        <option value="malappuram">
+        <option value="kozhikode">
+        <option value="kollam">
+        </datalist>
+        
+      </td>
+    </tr>
+    
+      <tr>
+        <td><button class="btn" name="submit" type="submit">submit</button></td>
+        <td><button class="btn" type="reset">reset</button></td>
+      </tr>
+
+
+    </table>
+    </fieldset>
+  </form>
+
+</body>
+</html>
