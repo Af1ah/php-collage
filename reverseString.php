@@ -19,11 +19,9 @@
     if (isset($_POST["submit"])) {
         $string = $_POST["string"];
         $rev = strrev($string);
-         echo "<h3>current String: $string</h3>";
+        echo "<h3>current String: $string</h3>";
         echo "<h3>reversed String: $rev</h3>";
     } 
-
-
     ?>
 
 </body>
