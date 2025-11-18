@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Fruits</title>
+</head>
+<body>
+    <h2>Select Your Favorite Fruits</h2>
+
+    <form action="fruits.php" method="post">
+        <label for="fruits">Fruits:</label>
+        <select name="fruits[]" size="6" id="fruits" multiple>
+            <option value="Apple">Apple</option>
+            <option value="Banana">Banana</option>
+            <option value="Orange">Orange</option>
+            <option value="Mango">Mango</option>
+            <option value="Grapes">Grapes</option>
+            <option value="Pineapple">Pineapple</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Show Selected Fruits">
+    </form>
+
+</body>
+</html>

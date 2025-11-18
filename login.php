@@ -7,7 +7,6 @@ if ($conn) {
 }
     $username=$_POST['username'];
     $pswd=$_POST['password'];
-    $regi="insert into login_table";
 
 
     $query="select * from login_table where username='$username' and password='$pswd' ";

@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Salary Information</title>
+</head>
+<body>
+    <h1>Employee Salary Details</h1><br>
+    <form action="salary.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="basic">Basic salary</label>
+        <input type="number" id="basic" name="basic" required><br><br>
+        <label for="designent">Designent</label>
+      <select name="designent" id="designent">
+        <option value="manager">manager</option>
+        <option value="supervisor">supervisor</option>
+        <option value="clerk">clerk</option>
+        <option value="peon">peon</option>
+        </select><br><br>
+        <input type="submit" value="Submit" name="submit">
+    </form>
+</body>
+</html>
